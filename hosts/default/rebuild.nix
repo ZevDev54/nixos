@@ -1,6 +1,6 @@
 {pkgs }:
 
-pkgs.writeShellScriptBin "rebuild" ''
+pkgs.writers.writeBashBin "rebuild" ''
 	set -e
 
 	pushd ~/dotfiles/nixos/
@@ -16,12 +16,12 @@ pkgs.writeShellScriptBin "rebuild" ''
 
 	sudo nixos-rebuild switch --flake ~/dotfiles/nixos/flake.nix#default &>nixos-switch.log || (cat nixos-switch.log | grep --color error && exit 1)
 
-	current = $(nixos-rebuild list-generations | grep current)
+	
 
-	git commit -am "$current"
+	git commit -am "$(nixos-rebuild list-generations | grep "current")"
 
 	popd
 
-	notify-send -e "NixOS rebuilt OK!"
+	notify-send -e "NixOS rebuilt Okay!!!"
 	
 ''
