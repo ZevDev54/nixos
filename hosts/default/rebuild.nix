@@ -22,6 +22,6 @@ pkgs.writers.writeBashBin "rebuild" ''
 
 	popd
 
-	echo "NixOS built and successfully comitted!"
+	echo "NixOS built and successfully comitted!!"
 	
 ''
