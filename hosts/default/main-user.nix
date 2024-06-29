@@ -27,6 +27,8 @@ in
 				vscode
 				godot_4
 				neofetch
+				wget
+				htop
 			];	
 		};	
 	};
