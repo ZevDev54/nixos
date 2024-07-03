@@ -10,7 +10,7 @@ in
 	  userName = lib.mkOption {
 	  	default = "mainuser";
 	  	description = ''
-	  	username
+	  	Zev
 	  	'';
 	  };
 	};
@@ -29,6 +29,7 @@ in
 				neofetch
 				wget
 				htop
+				steam
 			];	
 		};	
 	};
