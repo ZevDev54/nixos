@@ -29,6 +29,9 @@
   
 
   networking.hostName = "hactop"; # Define your hostname.
+
+  networking.nameservers = [ "8.8.8.8" "1.1.1.1"];
+
   # networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
 
   nix.settings.experimental-features = ["nix-command" "flakes"];
