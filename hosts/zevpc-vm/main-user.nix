@@ -21,7 +21,7 @@ in
  			initialPassword = "12345";
 			description = "Zev";
 			extraGroups = [ "networkmanager" "wheel" ];
-			shell = pkgs.fish;
+			shell = pkgs.zsh;
 
 			packages = with pkgs; [
 				vscode
@@ -29,7 +29,7 @@ in
 				neofetch
 				wget
 				htop
-				
+				zsh
 			];	
 		};	
 	};
