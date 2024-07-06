@@ -20,6 +20,8 @@
     
     nixosConfigurations =
     { 
+
+
       default = nixpkgs.lib.nixosSystem {
       specialArgs = {inherit inputs;};
       modules = [
@@ -27,6 +29,16 @@
         inputs.home-manager.nixosModules.default
       ];
     };
+
+      zevpc-vm  = nixpkgs.lib.nixosSystem {
+      specialArgs = {inherit inputs;};
+      modules = [
+        ./hosts/zevpc-vm/configuration.nix
+        ./hosts/zevpc-vm/hardware-configuration.nix
+      ];
+    }; 
+
+
     };
   };
  
