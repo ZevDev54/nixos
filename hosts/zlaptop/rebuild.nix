@@ -11,10 +11,10 @@ pkgs.writers.writeBashBin "rebuild" ''
 		exit 0
   fi
 
-	#git diff -U0 '*.nix'
+	git diff -U0 '*.nix'
 	echo "NixOS rebuilding..."
 
-	sudo nixos-rebuild switch --flake ~/dotfiles/nixos/flake.nix#default &>nixos-switch.log || (cat nixos-switch.log | grep --color error && exit 1)
+	sudo nixos-rebuild switch --flake ~/dotfiles/nixos/flake.nix &>nixos-switch.log || (cat nixos-switch.log | grep --color error && exit 1)
 
 	
 

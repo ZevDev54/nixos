@@ -13,6 +13,8 @@
       inputs.home-manager.nixosModules.default
     ];
 
+  stylix.base16Scheme = "${pkgs.base16-schemes}/share/themes/gruvbox-dark-medium.yaml";
+
   main-user.enable = true;
   main-user.userName = "zev";
 
@@ -28,7 +30,7 @@
   boot.loader.efi.canTouchEfiVariables = true;
   
 
-  networking.hostName = "hactop"; # Define your hostname.
+  networking.hostName = "zlaptop"; # Define your hostname.
 
   networking.nameservers = [ "8.8.8.8" "1.1.1.1"];
 

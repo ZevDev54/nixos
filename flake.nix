@@ -9,6 +9,8 @@
       url = "github:nix-community/home-manager";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+
+    stylix.url = "github:danth/stylix";
   };
 
   outputs = { self, nixpkgs, ... }@inputs:
@@ -20,13 +22,11 @@
     
     nixosConfigurations =
     { 
-
-
-      default = nixpkgs.lib.nixosSystem {
+      zlaptop = nixpkgs.lib.nixosSystem {
       specialArgs = {inherit inputs;};
       modules = [
-        ./hosts/default/configuration.nix
-        inputs.home-manager.nixosModules.default
+        ./hosts/zlaptop/configuration.nix
+        inputs.stylix.nixosModules.stylix
       ];
     };
 
@@ -34,7 +34,7 @@
       specialArgs = {inherit inputs;};
       modules = [
         ./hosts/zevpc-vm/configuration.nix
-        ./hosts/zevpc-vm/hardware-configuration.nix
+
       ];
     }; 
 

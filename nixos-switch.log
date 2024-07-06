@@ -1,0 +1,51 @@
+path '/home/zev/dotfiles/nixos/flake.nix' does not contain a 'flake.nix', searching up
+warning: Git tree '/home/zev/dotfiles/nixos' is dirty
+warning: updating lock file '/home/zev/dotfiles/nixos/flake.lock':
+• Added input 'stylix':
+    'github:danth/stylix/1ff9d37d27377bfe8994c24a8d6c6c1734ffa116' (2024-06-27)
+• Added input 'stylix/base16':
+    'github:SenchoPens/base16.nix/665b3c6748534eb766c777298721cece9453fdae' (2024-02-25)
+• Added input 'stylix/base16/fromYaml':
+    'github:SenchoPens/fromYaml/11fbbbfb32e3289d3c631e0134a23854e7865c84' (2023-07-16)
+• Added input 'stylix/base16-fish':
+    'github:tomyun/base16-fish/2f6dd973a9075dabccd26f1cded09508180bf5fe' (2021-06-01)
+• Added input 'stylix/base16-foot':
+    'github:tinted-theming/base16-foot/eedbcfa30de0a4baa03e99f5e3ceb5535c2755ce' (2023-10-08)
+• Added input 'stylix/base16-helix':
+    'github:tinted-theming/base16-helix/dbe1480d99fe80f08df7970e471fac24c05f2ddb' (2023-10-08)
+• Added input 'stylix/base16-kitty':
+    'github:kdrag0n/base16-kitty/06bb401fa9a0ffb84365905ffbb959ae5bf40805' (2022-10-05)
+• Added input 'stylix/base16-tmux':
+    'github:tinted-theming/base16-tmux/c02050bebb60dbb20cb433cd4d8ce668ecc11ba7' (2023-10-08)
+• Added input 'stylix/base16-vim':
+    'github:tinted-theming/base16-vim/6e955d704d046b0dc3e5c2d68a2a6eeffd2b5d3d' (2024-05-19)
+• Added input 'stylix/flake-compat':
+    'github:edolstra/flake-compat/35bb57c0c8d8b62bbfd284272c928ceb64ddbde9' (2023-01-17)
+• Added input 'stylix/gnome-shell':
+    'github:GNOME/gnome-shell/0d0aadf013f78a7f7f1dc984d0d812971864b934' (2024-04-21)
+• Added input 'stylix/home-manager':
+    'github:nix-community/home-manager/e3ad5108f54177e6520535768ddbf1e6af54b59d' (2024-05-17)
+• Added input 'stylix/home-manager/nixpkgs':
+    follows 'stylix/nixpkgs'
+• Added input 'stylix/nixpkgs':
+    'github:NixOS/nixpkgs/ee4a6e0f566fe5ec79968c57a9c2c3c25f2cf41d' (2024-05-05)
+warning: Git tree '/home/zev/dotfiles/nixos' is dirty
+building the system configuration...
+path '/home/zev/dotfiles/nixos/flake.nix' does not contain a 'flake.nix', searching up
+warning: Git tree '/home/zev/dotfiles/nixos' is dirty
+trace: warning: The option `services.xserver.xkbVariant' defined in `/nix/store/29x5dml2zp973clv0a5417p1myj97ph2-source/hosts/zlaptop/configuration.nix' has been renamed to `services.xserver.xkb.variant'.
+trace: warning: The option `services.xserver.layout' defined in `/nix/store/29x5dml2zp973clv0a5417p1myj97ph2-source/hosts/zlaptop/configuration.nix' has been renamed to `services.xserver.xkb.layout'.
+these 3 derivations will be built:
+  /nix/store/fgdy1gzxiw3lghcl1g6sr6myrbzji79y-user-environment.drv
+  /nix/store/36gxrjmsxlzndr714l712f50lnvwkwj7-etc.drv
+  /nix/store/4dvvzb8yvask0abkzzx2hhasnla4rjc0-nixos-system-zlaptop-24.11.20240703.9f4128e.drv
+this path will be fetched (0.54 MiB download, 1.84 MiB unpacked):
+  /nix/store/vy73vlkyl9rn6j3arqgiwjaiiyfi5xnp-btop-1.3.2
+copying path '/nix/store/vy73vlkyl9rn6j3arqgiwjaiiyfi5xnp-btop-1.3.2' from 'https://cache.nixos.org'...
+building '/nix/store/fgdy1gzxiw3lghcl1g6sr6myrbzji79y-user-environment.drv'...
+building '/nix/store/36gxrjmsxlzndr714l712f50lnvwkwj7-etc.drv'...
+building '/nix/store/4dvvzb8yvask0abkzzx2hhasnla4rjc0-nixos-system-zlaptop-24.11.20240703.9f4128e.drv'...
+activating the configuration...
+setting up /etc...
+reloading user units for zev...
+restarting sysinit-reactivation.target
