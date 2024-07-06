@@ -81,8 +81,7 @@
       [ "~/dotfiles/nixos/images/Wallpapers/ZineStuffs/*"];
 
     wallpaper = [
-      "DP-3,/share/wallpapers/buttons.png"
-      "DP-1,/share/wallpapers/cat_pacman.png"
+      "DP-1,~/dotfiles/nixos/images/Wallpapers/ZineStuffs/FlowersGraybkg.png"
     ];
   }
   # Let Home Manager install and manage itself.
