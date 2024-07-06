@@ -27,6 +27,7 @@
       modules = [
         ./hosts/zlaptop/configuration.nix
         inputs.stylix.nixosModules.stylix
+        inputs.home-manager.nixosModules.default
       ];
     };
 
@@ -34,7 +35,7 @@
       specialArgs = {inherit inputs;};
       modules = [
         ./hosts/zevpc-vm/configuration.nix
-
+        inputs.home-manager.nixosModules.default
       ];
     }; 
 

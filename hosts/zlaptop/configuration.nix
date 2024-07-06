@@ -13,7 +13,25 @@
       inputs.home-manager.nixosModules.default
     ];
 
-  stylix.base16Scheme = "${pkgs.base16-schemes}/share/themes/gruvbox-dark-medium.yaml";
+  stylix.base16Scheme = "${pkgs.base16-schemes}/share/themes/atelier-dune.yaml";
+  stylix.enable = true;
+  stylix.image = ../../images/Wallpapers/EMerlinMurray/WalkHead.png;
+
+  stylix.fonts = {
+    monospace = {
+      package = pkgs.nerdfonts.override {fonts = ["JetBrainsMono"];};
+      name = "JetBrainsMono Nerd Font Mono";
+    };
+    sansSerif = {
+      package = pkgs.dejavu_fonts;
+      name = "DejaVu Sans";
+    };
+    serif = {
+      package = pkgs.dejavu_fonts;
+      name = "DejaVu Serif";
+    };
+  };
+  
 
   main-user.enable = true;
   main-user.userName = "zev";
@@ -112,6 +130,9 @@
   # List packages installed in system profile. To search, run:
   # $ nix search wget
   environment.systemPackages = with pkgs; [
+  #usbutils
+  #usbdiskie
+  #udisks
   alacritty
   lf
   micro  
@@ -130,6 +151,9 @@
 #  vim # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
   #  wget
   ];
+
+  #services.gvfs.enable = true;
+  #services.udisks2.enable = true;
 
   programs.steam.enable = true;
   programs.hyprland.enable = true;

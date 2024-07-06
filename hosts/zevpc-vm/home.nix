@@ -71,6 +71,20 @@
     EDITOR = "micro";
   };
 
+  services.hyprpapr.enable = true;
+  services.hyprpaper.settings = {
+    ipc = "on";
+    splash = false;
+    splash_offset = 2.0;
+
+    preload =
+      [ "~/dotfiles/nixos/images/Wallpapers/ZineStuffs/*"];
+
+    wallpaper = [
+      "DP-3,/share/wallpapers/buttons.png"
+      "DP-1,/share/wallpapers/cat_pacman.png"
+    ];
+  }
   # Let Home Manager install and manage itself.
   programs.home-manager.enable = true;
 
