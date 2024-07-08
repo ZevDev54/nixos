@@ -84,6 +84,9 @@
       "DP-1,~/dotfiles/nixos/images/Wallpapers/ZineStuffs/FlowersGraybkg.png"
     ];
   }
+
+
+
   # Let Home Manager install and manage itself.
   programs.home-manager.enable = true;
 

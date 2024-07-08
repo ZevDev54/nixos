@@ -21,7 +21,7 @@ in
  			initialPassword = "12345";
 			description = "Zev";
 			extraGroups = [ "networkmanager" "wheel" ];
-			shell = pkgs.fish;
+			shell = pkgs.zsh;
 
 			packages = with pkgs; [
 				vscode
@@ -30,7 +30,23 @@ in
 				wget
 				htop
 				btop
+				zsh
 			];	
 		};	
+
+		programs.zsh = {
+		enable = true;
+		enableCompletion = true;
+ 	 	syntaxHighlighting.enable = true;
+
+		oh-my-zsh = {
+			enable = true;
+			plugins = [ "git" "thefuck" ];
+			theme = "robbyrussell";
+		};
 	};
+	};
+
+		
+
 }
