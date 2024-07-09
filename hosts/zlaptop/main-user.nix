@@ -31,6 +31,7 @@ in
 				htop
 				btop
 				zsh
+				lutris
 			];	
 		};	
 
@@ -41,8 +42,8 @@ in
 
 		oh-my-zsh = {
 			enable = true;
-			plugins = [ "git" "thefuck" ];
-			theme = "robbyrussell";
+			plugins = [ "git zsh-autosuggestions" ];
+			theme = "bira";
 		};
 	};
 	};

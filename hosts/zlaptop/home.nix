@@ -67,9 +67,21 @@
   #
   #  /etc/profiles/per-user/zev/etc/profile.d/hm-session-vars.sh
   #
-  home.sessionVariables = {
-    EDITOR = "micro";
-  };
+
+
+  #services.hyprpapr.enable = true;
+  #services.hyprpaper.settings = {
+    #ipc = "on";
+    #splash = false;
+    #splash_offset = 2.0;
+
+   # preload =
+  #    [ "~/dotfiles/nixos/images/Wallpapers/ZineStuffs/*"];
+
+   # wallpaper = [
+   #   "DP-1,~/dotfiles/nixos/images/Wallpapers/ZineStuffs/FlowersGraybkg.png"
+   # ];
+  #};
 
   # Let Home Manager install and manage itself.
   programs.home-manager.enable = true;
