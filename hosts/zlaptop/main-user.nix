@@ -32,6 +32,7 @@ in
 				btop
 				zsh
 				lutris
+				wine
 			];	
 		};	
 
