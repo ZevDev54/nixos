@@ -2,12 +2,11 @@
 
 {
   services.minecraft-server = {
-    enable = true;
+    enable = false;
     eula = true;
     declarative = true;
 
     #package = pkgs.papermc;
-    dataDir = "/home/zev/Desktop/minecraft/";
 
     serverProperties = {
       server-port = 25565;
