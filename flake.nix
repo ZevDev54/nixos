@@ -26,6 +26,7 @@
       specialArgs = {inherit inputs;};
       modules = [
         ./hosts/zlaptop/configuration.nix
+        
         inputs.stylix.nixosModules.stylix
         inputs.home-manager.nixosModules.default
       ];
