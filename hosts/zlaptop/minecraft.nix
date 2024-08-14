@@ -5,8 +5,8 @@
     enable = true;
     eula = true;
 
-    package = pkgs.papermc;
-    dataDir = "/home/zev/Desktop/Minecraft/";
+    #package = pkgs.papermc;
+    #dataDir = "/home/zev/Desktop/Minecraft/";
 
   };
 }
