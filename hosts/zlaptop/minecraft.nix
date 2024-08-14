@@ -7,7 +7,7 @@
     declarative = true;
 
     #package = pkgs.papermc;
-    dataDir = "/home/zev/Desktop/Minecraft/";
+    #dataDir = "/home/zev/Desktop/Minecraft/";
 
     serverProperties = {
       server-port = 25565;
