@@ -34,6 +34,7 @@ in
 				zsh
 				lutris
 				wine
+				stow
 			];	
 		};	
 
