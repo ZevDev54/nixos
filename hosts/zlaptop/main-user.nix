@@ -30,6 +30,7 @@ in
 				wget
 				htop
 				btop
+				zsh-autosuggestions
 				zsh
 				lutris
 				wine
