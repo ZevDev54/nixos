@@ -45,7 +45,7 @@ in
 
 		oh-my-zsh = {
 			enable = true;
-			plugins = [ "git zsh-autosuggestions" ];
+			plugins = [ "git zsh-autocomplete" ];
 			theme = "bira";
 		};
 	};
